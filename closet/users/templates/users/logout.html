@@ -1,0 +1,14 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <h2>You have been logged out</h2>
+	<div class="border-top pt-3">
+		<style> 
+			a {color: #f5b076;} 
+			a:hover {color: #ad8761;}
+		</style>
+		<small class="text-muted">
+			 <a href="{% url 'login' %}">Log In Again</a>
+		</small>
+	</div>
+{% endblock content %}
