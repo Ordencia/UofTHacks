@@ -3,7 +3,7 @@ import {
     WeatherContainerDiv, 
     WeatherOfDayContainerDiv ,
     WeatherTitle,
-    CustomList
+    CustomList,
 } from './styled'
 import Divider from '@material-ui/core/Divider'
 
