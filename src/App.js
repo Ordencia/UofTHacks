@@ -69,6 +69,8 @@ function App() {
           Gucci gang, Gucci gang, Gucci gang
           Lil Pump, yeah, Lil Pump, ooh
         </a>*/}
+          hate lil pump
+        </a>
       </FlexDiv>
       <FlexDiv> 
         <Header/>

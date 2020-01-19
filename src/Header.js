@@ -1,11 +1,11 @@
-import  WeatherContainer  from './WeatherContainer'
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import { PrettyButton, ButtonDiv } from './styled'
-import WardrobeContainer from './WardrobeContainer';
+import WardrobeContainer from './WardrobeContainer'
+import OutfitContainer from './OutfitContainer'
 
 const Header = () => {
 
-     const [container, setContainer] = useState(1)
+     const [container, setContainer] = useState(0)
 
 
     return (
@@ -22,8 +22,9 @@ const Header = () => {
             </PrettyButton>
             </ButtonDiv>
             {
-                (container === 1 &&  <WardrobeContainer/>) ||
-                (container === 2 && null)
+                (container === 1 &&  <OutfitContainer/>) ||
+                (container === 2 && <WardrobeContainer/>) ||
+                null
             }
         </>
     )
