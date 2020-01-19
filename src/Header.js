@@ -1,7 +1,7 @@
 import  WeatherContainer  from './WeatherContainer'
 import React, { useState } from 'react';
 import { PrettyButton, ButtonDiv } from './styled'
-import WarddrobeContainer from './WardrobeContainer';
+import WardrobeContainer from './WardrobeContainer';
 
 const Header = () => {
 
@@ -11,19 +11,19 @@ const Header = () => {
     return (
         <>
             <ButtonDiv>
-            <PrettyButton onClick={() => setContainer(1)}>
+            {/*<PrettyButton onClick={() => setContainer(1)}>
                 Weather
+            </PrettyButton>*/}
+            <PrettyButton onClick={() => setContainer(1)}>
+                Outfit
             </PrettyButton>
             <PrettyButton onClick={() => setContainer(2)}>
-                Outfits
-            </PrettyButton>
-            <PrettyButton onClick={() => setContainer(3)}>
                 Wardrobe
             </PrettyButton>
             </ButtonDiv>
             {
-                (container === 1 &&  <WeatherContainer/>) ||
-                (container === 2 && <WarddrobeContainer/>)
+                (container === 1 &&  <WardrobeContainer/>) ||
+                (container === 2 && null)
             }
         </>
     )

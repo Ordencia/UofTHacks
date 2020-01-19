@@ -5,16 +5,24 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import { FixedSizeList } from 'react-window';
 
-const WarddrobeContainer = (props) => {
+const WardrobeContainer = (props) => {
     const numOutfits = props.numOutfits
 
     const useStyles = makeStyles(theme => ({
         root: {
           width: '100%',
-          height: 400,
-          maxWidth: 300,
-          backgroundColor: theme.palette.background.paper,
+          height: '100vh',
+          // maxWidth: 300,
+          //backgroundColor: theme.palette.background.paper,
+          backgroundColor: theme.palette.background.paper
         },
+        listItem: {
+          backgroundColor: theme.palette.background.paper,
+          //height: "",
+          width: "100%",
+          itemSize: "64",
+          itemCount: "5"
+        }
       }));
       
       function renderRow(props) {
@@ -36,11 +44,11 @@ const WarddrobeContainer = (props) => {
 
         return (
           <div className={classes.root}>
-            <FixedSizeList height={400} width={300} itemSize={64} itemCount={5}>
+            <FixedSizeList className={classes.listItem} height={400} width={"100%"} itemSize={64} itemCount={5}>
               {renderRow}
             </FixedSizeList>
           </div>
         );
       }
 
-export default WarddrobeContainer
+export default WardrobeContainer
