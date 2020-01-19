@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import  Button  from '@material-ui/core/Button'
+import Button from '@material-ui/core/Button'
 import Divider from '@material-ui/core/Divider'
 
 export const Header = styled.header`
@@ -61,4 +61,3 @@ export const CustomList = styled.ul`
 
 export const ButtonDiv = styled.div`
 `
-

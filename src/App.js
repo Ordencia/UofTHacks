@@ -1,9 +1,9 @@
 import React from 'react';
-import logo from './sunny.png';
 import './App.css';
 import  Header  from './Header'
 import { FlexDiv, WeatherTitle } from './styled'
 import Grid from '@material-ui/core/Grid'
+import WeatherInfoPanel from './WeatherInfoPanel.jsx'
 
 function App() {
   
@@ -12,7 +12,8 @@ function App() {
     <Grid>
       <FlexDiv>
             <WeatherTitle>WEATHER ^-^</WeatherTitle>
-        <img src={logo} className="App-logo" alt="logo" />
+            <WeatherInfoPanel />
+{/*        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Weather
         </p>
@@ -67,7 +68,7 @@ function App() {
           Rather go and buy Balmains, aye
           Gucci gang, Gucci gang, Gucci gang
           Lil Pump, yeah, Lil Pump, ooh
-        </a>
+        </a>*/}
       </FlexDiv>
       <FlexDiv> 
         <Header/>
